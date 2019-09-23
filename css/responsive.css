@@ -27,6 +27,18 @@
     .nav-wrapper {
         padding: 0;
     }
+
+    /* Services */
+    .service-item-icon i {
+        width: 65px;
+        height: 65px;
+        padding: 10px;
+    }
+
+    .service-item-title h3 {
+        font-size: 17px;
+    }
+
 }
 
 

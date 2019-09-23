@@ -126,6 +126,15 @@ h3 {
     display: none;
 }
 
+.btn-t {
+    color: #fff;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border-color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+}
+
 /*====================================================
                        ANIMATE
 ======================================================*/
@@ -433,7 +442,9 @@ form .form-control {
     background: #34c6d3;
     color: #fff;
     margin-bottom: 10px;
+    display: none;
 }
+
 
 /*====================================================
                        FOOTER

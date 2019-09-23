@@ -1,57 +1,57 @@
- // Your web app's Firebase configuration
- var firebaseConfig = {
-     apiKey: "AIzaSyBpmUe9YGyH9hJaI06oNOqGFhy-oARmFl4",
-     authDomain: "contactform-74abd.firebaseapp.com",
-     databaseURL: "https://contactform-74abd.firebaseio.com",
-     projectId: "contactform-74abd",
-     storageBucket: "contactform-74abd.appspot.com",
-     messagingSenderId: "926993576523",
-     appId: "1:926993576523:web:74d776c781fd40237753ce"
- };
- // Initialize Firebase
- firebase.initializeApp(firebaseConfig);
+// Your web app's Firebase configuration
+var firebaseConfig = {
+    apiKey: "AIzaSyDRSo9gVnLcoZUtaXXtSmp0KuTpjgdl7Jo",
+    authDomain: "bigtyme-35057.firebaseapp.com",
+    databaseURL: "https://bigtyme-35057.firebaseio.com",
+    projectId: "bigtyme-35057",
+    storageBucket: "bigtyme-35057.appspot.com",
+    messagingSenderId: "226470763553",
+    appId: "1:226470763553:web:9e6c41df099eb295005760"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
- // Reference messages collection
- var messagesRef = firebase.database().ref('messages');
+// Reference messages collection
+var messagesRef = firebase.database().ref('message');
 
- // Listen for form submit
- document.getElementById('contact-right').addEventListener('submit', submitForm);
+// Listen for form submit
+document.getElementById('contacts').addEventListener('submit', submitForm);
 
- // Submit form
- function submitForm(e) {
-     e.preventDefault();
+// Submit form
+function submitForm(e) {
+    e.preventDefault();
 
-     // Get values
-     var name = getInputVal('name');
-     var email = getInputVal('email');
-     var message = getInputVal('messages');
+    // Get values
+    var name = getInputVal('name');
+    var email = getInputVal('email');
+    var message = getInputVal('message');
 
-     // Save message
-     saveMessage(name, email, message);
+    // Save message
+    saveMessage(name, email, message);
 
-     // Show alert
-     document.querySelector('.alert').style.display = 'block';
+    // Show alert
+    document.querySelector('.alert').style.display = 'block';
 
-     // Hide alert after 3 seconds
-     setTimeout(function () {
-         document.querySelector('.alert').style.display = 'none';
-     }, 3000);
+    // Hide alert after 1 seconds
+    setTimeout(function () {
+        document.querySelector('.alert').style.display = 'none';
+    }, 1000);
 
-     // Clear form
-     document.getElementById('contact-right').reset();
- }
+    // Clear form
+    document.getElementById('contacts').reset();
+}
 
- // Function to get get form values
- function getInputVal(id) {
-     return document.getElementById(id).value;
- }
+// Function to get get form values
+function getInputVal(id) {
+    return document.getElementById(id).value;
+}
 
- // Save message to firebase
- function saveMessage(name, email, message) {
-     var newMessageRef = messagesRef.push();
-     newMessageRef.set({
-         name: name,
-         email: email,
-         message: message
-     });
- }
+// Save message to firebase
+function saveMessage(name, email, message) {
+    var newMessageRef = messagesRef.push();
+    newMessageRef.set({
+        name: name,
+        email: email,
+        message: message
+    });
+}
