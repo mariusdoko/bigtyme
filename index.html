@@ -6,7 +6,7 @@
 
     <meta charset="utf 8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device width, initial scale=1">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
 
     <!-- title -->
     <title>BIGTYME BILLIARDS</title>
@@ -270,57 +270,57 @@
                 <div class="row no-gutters wow animated fadeInUp">
                     <div class="col-md-3 col-sm-4">
                         <div class="img-wrapper">
-                            <a href="img/work/1.jpg" title="Description">
-                                <img src="img/work/1.jpg" class="img-responsive" alt="work">
+                            <a href="img/ourwork/1.jpg" title="Description">
+                                <img src="img/ourwork/1.jpg" class="img-responsive" alt="work">
                             </a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-4">
                         <div class="img-wrapper">
-                            <a href="img/work/2.jpg" title="Description">
-                                <img src="img/work/2.jpg" class="img-responsive" alt="work">
+                            <a href="img/ourwork/2.jpg" title="Description">
+                                <img src="img/ourwork/2.jpg" class="img-responsive" alt="work">
                             </a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-4">
                         <div class="img-wrapper">
-                            <a href="img/work/3.jpg" title="Description">
-                                <img src="img/work/3.jpg" class="img-responsive" alt="work">
+                            <a href="img/ourwork/3.png" title="Description">
+                                <img src="img/ourwork/3.png" class="img-responsive" alt="work">
                             </a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-4">
                         <div class="img-wrapper">
-                            <a href="img/work/4.jpg" title="Description">
-                                <img src="img/work/4.jpg" class="img-responsive" alt="work">
+                            <a href="img/ourwork/4.jpg" title="Description">
+                                <img src="img/ourwork/4.jpg" class="img-responsive" alt="work">
                             </a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-4">
                         <div class="img-wrapper">
-                            <a href="img/work/5.jpg" title="Description">
-                                <img src="img/work/5.jpg" class="img-responsive" alt="work">
+                            <a href="img/ourwork/5.jpg" title="Description">
+                                <img src="img/ourwork/5.jpg" class="img-responsive" alt="work">
                             </a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-4">
                         <div class="img-wrapper">
-                            <a href="img/work/6.jpg" title="Description">
-                                <img src="img/work/6.jpg" class="img-responsive" alt="work">
+                            <a href="img/ourwork/6.jpg" title="Description">
+                                <img src="img/ourwork/6.jpg" class="img-responsive" alt="work">
                             </a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-4">
                         <div class="img-wrapper">
-                            <a href="img/work/7.jpg" title="Description">
-                                <img src="img/work/7.jpg" class="img-responsive" alt="work">
+                            <a href="img/ourwork/7.jpg" title="Description">
+                                <img src="img/ourwork/7.jpg" class="img-responsive" alt="work">
                             </a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-4">
                         <div class="img-wrapper">
-                            <a href="img/work/8.jpg" title="Description">
-                                <img src="img/work/8.jpg" class="img-responsive" alt="work">
+                            <a href="img/ourwork/8.jpg" title="Description">
+                                <img src="img/ourwork/8.jpg" class="img-responsive" alt="work">
                             </a>
                         </div>
                     </div>
@@ -521,21 +521,22 @@
                         <div class="col-md-6">
                             <div id="contact-right">
                                 <h3>Contact Us</h3>
+                                <div class="alert">Your message has been sent!</div>
                                 <form action="#">
-                                    <input type="text" name="fullname" placeholder="Full Name" class="form-control">
-                                    <input type="text" name="email" placeholder="Email Adress" class="form-control">
-                                    <textarea rows="5" name="message" placeholder="Message..."
+                                    <input type="text" name="fullname" id="name" required placeholder="Full Name"
+                                        class="form-control">
+                                    <input type="email" name="email" id="email" required placeholder="Email Adress"
+                                        class="form-control">
+                                    <textarea rows="5" name="messages" id="messages" required placeholder="Message..."
                                         class="form-control"></textarea>
                                     <div id="send-btn">
-                                        <a class="btn btn-lg btn-general btn-white" href="#" role="button">SEND</a>
+                                        <a class="btn btn-lg btn-general btn-white" type="submit" role="button">SEND</a>
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
             </div>
             <div id="footer-bottom">
                 <div class="container">
@@ -595,9 +596,15 @@
     <!--Easing Scroll-->
     <script src="js/easing/jquery.easing.1.3.js"></script>
 
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-database.js"></script>
+
     <!--costum.js-->
     <script src="js/costum.js"></script>
 
+    <!--Contact-->
+    <script src="js/contact.js"></script>
 
 </body>
 
