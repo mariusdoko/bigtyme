@@ -1,4 +1,3 @@
-// Your web app's Firebase configuration
 var firebaseConfig = {
     apiKey: "AIzaSyDRSo9gVnLcoZUtaXXtSmp0KuTpjgdl7Jo",
     authDomain: "bigtyme-35057.firebaseapp.com",
@@ -10,12 +9,11 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-
 // Reference messages collection
 var messagesRef = firebase.database().ref('message');
 
 // Listen for form submit
-document.getElementById('contacts').addEventListener('submit', submitForm);
+document.getElementById('contactForm').addEventListener('submit', submitForm);
 
 // Submit form
 function submitForm(e) {
@@ -32,13 +30,13 @@ function submitForm(e) {
     // Show alert
     document.querySelector('.alert').style.display = 'block';
 
-    // Hide alert after 1 seconds
+    // Hide alert after 3 seconds
     setTimeout(function () {
         document.querySelector('.alert').style.display = 'none';
     }, 1000);
 
     // Clear form
-    document.getElementById('contacts').reset();
+    document.getElementById('contactForm').reset();
 }
 
 // Function to get get form values
